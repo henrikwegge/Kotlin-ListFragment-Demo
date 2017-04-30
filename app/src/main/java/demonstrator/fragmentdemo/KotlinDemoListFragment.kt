@@ -14,7 +14,7 @@ class KotlinDemoListFragment : ListFragment()
     {
         val names = arrayOf("name1", "name2")
 
-        val adapter = ArrayAdapter(inflater.context, android.R.layout.simple_list_item_1, names)
+        val adapter : ArrayAdapter<String> = ArrayAdapter(inflater.context, android.R.layout.simple_list_item_1, names)
 
         listAdapter = adapter
 
